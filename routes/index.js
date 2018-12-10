@@ -53,6 +53,7 @@ router.get('/logout', function(req, res){
   
 router.get('/quotes', function(req, res){
   console.log("fetching quotes");
+  if (req.session.user) {
     User.find({quote: {$exists: true, $ne: ""}})
     .exec(function(err, users) {
       if (err) return console.error(err); //If there's an error, print it out
@@ -62,6 +63,9 @@ router.get('/quotes', function(req, res){
         res.json(users); //Then send the comments
       }
     });
+  } else {
+    res.redirect('/login');
+  }
 });
 router.post('/signup', users.signup);
 router.post('/user/update', users.updateUser);

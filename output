@@ -1,128 +1,113 @@
 nohup: ignoring input
 
-> auth@0.0.0 start /var/www/html/lab6/auth
+> auth@0.0.0 start /var/www/html/Project6
 > node ./bin/www
 
 before / Route
 Connected
-(node:29749) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
-/login Route
-[0mGET /login [32m200 [0m10.836 ms - 720[0m
-[0mGET /stylesheets/style.css [36m304 [0m3.177 ms - -[0m
-[0mGET /favicon.ico [33m404 [0m2.074 ms - 199[0m
-/login Route
-[0mGET /login [32m200 [0m1.449 ms - 720[0m
-[0mGET /stylesheets/style.css [32m200 [0m2.793 ms - 561[0m
-[0mGET /favicon.ico [33m404 [0m0.928 ms - 199[0m
+(node:32744) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+login
+{ _id: 5c0ef8b2ee1bfa7f2f579567,
+  username: 'Anakin',
+  hashed_password: 'ungWv48Bz+pBQUDeXa4iI7ADYaOWF3qctBD/YfIAFa0=',
+  __v: 0,
+  quote: 'I hate sand' }
+[0mPOST /login [36m302 [0m43.463 ms - 46[0m
 / Route
 Session {
   cookie: 
    { path: '/',
-     _expires: 2019-01-03T04:30:10.312Z,
+     _expires: 2019-01-10T09:40:14.312Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c0ef8b2ee1bfa7f2f579567',
+  username: 'Anakin',
+  msg: 'Authenticated as Anakin',
+  quote: 'I hate sand' }
+/ Route if user
+[0mGET / [32m200 [0m9.789 ms - 1143[0m
+[0mGET /stylesheets/style.css [32m200 [0m5.207 ms - 665[0m
+[0mGET /javascripts/my_app.js [32m200 [0m4.974 ms - 526[0m
+fetching quotes
+User quotes successfully retrieved
+[ { _id: 5c0ee5dc42c24874a213fa8f,
+    username: 'twede',
+    hashed_password: 'ungWv48Bz+pBQUDeXa4iI7ADYaOWF3qctBD/YfIAFa0=',
+    __v: 0,
+    quote: '"Time you enjoyed wasting, was not wasted"' },
+  { _id: 5c0ef8b2ee1bfa7f2f579567,
+    username: 'Anakin',
+    hashed_password: 'ungWv48Bz+pBQUDeXa4iI7ADYaOWF3qctBD/YfIAFa0=',
+    __v: 0,
+    quote: 'I hate sand' } ]
+[0mGET /quotes [32m200 [0m12.284 ms - 333[0m
+[0mGET /user/profile [32m200 [0m14.140 ms - 149[0m
+/logout Route
+[0mGET /logout [36m302 [0m1.735 ms - 56[0m
+/login Route
+[0mGET /login [32m200 [0m2.662 ms - 813[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.555 ms - 665[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-10T09:40:18.792Z,
      originalMaxAge: 2628000000,
      httpOnly: true } }
 / Route else user
-[0mGET / [36m302 [0m8.678 ms - 56[0m
+[0mGET / [36m302 [0m1.690 ms - 56[0m
 /login Route
-[0mGET /login [32m200 [0m1.082 ms - 734[0m
-[0mGET /stylesheets/style.css [36m304 [0m16.060 ms - -[0m
+[0mGET /login [32m200 [0m1.227 ms - 849[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.508 ms - 665[0m
+fetching quotes
+User quotes successfully retrieved
+[ { _id: 5c0ee5dc42c24874a213fa8f,
+    username: 'twede',
+    hashed_password: 'ungWv48Bz+pBQUDeXa4iI7ADYaOWF3qctBD/YfIAFa0=',
+    __v: 0,
+    quote: '"Time you enjoyed wasting, was not wasted"' },
+  { _id: 5c0ef8b2ee1bfa7f2f579567,
+    username: 'Anakin',
+    hashed_password: 'ungWv48Bz+pBQUDeXa4iI7ADYaOWF3qctBD/YfIAFa0=',
+    __v: 0,
+    quote: 'I hate sand' } ]
+[0mGET /quotes [32m200 [0m8.588 ms - 333[0m
 /login Route
-[0mGET /login [36m304 [0m1.205 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.494 ms - -[0m
-/login Route
-[0mGET /login [32m200 [0m3.795 ms - 734[0m
-[0mGET /stylesheets/style.css [32m200 [0m2.270 ms - 561[0m
-[0mGET /favicon.ico [33m404 [0m1.146 ms - 199[0m
+[0mGET /login [32m200 [0m2.409 ms - 849[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.467 ms - 665[0m
 login
-{ _id: 5c0570c44feb117084b1a262,
-  username: 'twede',
+{ _id: 5c0ef8b2ee1bfa7f2f579567,
+  username: 'Anakin',
   hashed_password: 'ungWv48Bz+pBQUDeXa4iI7ADYaOWF3qctBD/YfIAFa0=',
-  email: 'twede.brandon@gmail.com',
   __v: 0,
-  color: 'Greeeeen' }
-[0mPOST /login [36m302 [0m34.688 ms - 46[0m
+  quote: 'I hate sand' }
+[0mPOST /login [36m302 [0m9.200 ms - 46[0m
 / Route
 Session {
   cookie: 
    { path: '/',
-     _expires: 2019-01-03T04:36:58.686Z,
+     _expires: 2019-01-10T09:40:42.073Z,
      originalMaxAge: 2628000000,
      httpOnly: true },
-  user: '5c0570c44feb117084b1a262',
-  username: 'twede',
-  msg: 'Authenticated as twede',
-  color: 'Greeeeen' }
+  user: '5c0ef8b2ee1bfa7f2f579567',
+  username: 'Anakin',
+  msg: 'Authenticated as Anakin',
+  quote: 'I hate sand' }
 / Route if user
-[0mGET / [32m200 [0m1.757 ms - 758[0m
-[0mGET /stylesheets/style.css [36m304 [0m3.496 ms - -[0m
-[0mGET /javascripts/my_app.js [36m304 [0m2.022 ms - -[0m
-[0mGET /user/profile [36m304 [0m4.622 ms - -[0m
-/logout Route
-[0mGET /logout [36m302 [0m1.624 ms - 56[0m
-/login Route
-[0mGET /login [32m200 [0m3.066 ms - 720[0m
-[0mGET /stylesheets/style.css [36m304 [0m4.912 ms - -[0m
-login
-{ _id: 5c0570c44feb117084b1a262,
-  username: 'twede',
-  hashed_password: 'ungWv48Bz+pBQUDeXa4iI7ADYaOWF3qctBD/YfIAFa0=',
-  email: 'twede.brandon@gmail.com',
-  __v: 0,
-  color: 'Greeeeen' }
-[0mPOST /login [36m302 [0m3.486 ms - 46[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2019-01-03T04:37:04.683Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  user: '5c0570c44feb117084b1a262',
-  username: 'twede',
-  msg: 'Authenticated as twede',
-  color: 'Greeeeen' }
-/ Route if user
-[0mGET / [36m304 [0m1.255 ms - -[0m
-[0mGET /stylesheets/style.css [36m304 [0m4.033 ms - -[0m
-[0mGET /javascripts/my_app.js [36m304 [0m0.915 ms - -[0m
-[0mGET /user/profile [36m304 [0m1.749 ms - -[0m
-/login Route
-[0mGET /login [32m200 [0m5.258 ms - 720[0m
-[0mGET /stylesheets/style.css [32m200 [0m2.956 ms - 561[0m
-[0mGET /favicon.ico [33m404 [0m5.094 ms - 199[0m
-/signup Route
-[0mGET /signup [32m200 [0m2.760 ms - 768[0m
-[0mGET /stylesheets/style.css [36m304 [0m4.465 ms - -[0m
-Begin exports.signup
-after new user exports.signup
-after hashing user exports.signup
-after email user exports.signup
-In exports.signup
-null
-[0mPOST /signup [36m302 [0m15.042 ms - 46[0m
-/ Route
-Session {
-  cookie: 
-   { path: '/',
-     _expires: 2019-01-09T14:08:20.816Z,
-     originalMaxAge: 2628000000,
-     httpOnly: true },
-  user: '5c0de6b4e317617435220205',
-  username: 'bcis',
-  msg: 'Authenticated as bcis' }
-/ Route if user
-[0mGET / [32m200 [0m1.504 ms - 748[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.565 ms - -[0m
-[0mGET /javascripts/my_app.js [32m200 [0m1.732 ms - 400[0m
-[0mGET /user/profile [32m200 [0m1.543 ms - 150[0m
-/user Route
-[0mGET /user [32m200 [0m1.581 ms - 1223[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.878 ms - -[0m
-[0mGET /javascripts/my_app.js [36m304 [0m0.747 ms - -[0m
-[0mGET /user/profile [36m304 [0m1.457 ms - -[0m
-[0mPOST /user/update [36m302 [0m9.839 ms - 54[0m
-/user Route
-[0mGET /user [32m200 [0m1.318 ms - 1215[0m
-[0mGET /stylesheets/style.css [36m304 [0m1.234 ms - -[0m
-[0mGET /javascripts/my_app.js [36m304 [0m0.979 ms - -[0m
-[0mGET /user/profile [32m200 [0m1.835 ms - 166[0m
+[0mGET / [32m200 [0m2.321 ms - 1143[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.353 ms - 665[0m
+[0mGET /javascripts/my_app.js [32m200 [0m2.925 ms - 526[0m
+fetching quotes
+User quotes successfully retrieved
+[ { _id: 5c0ee5dc42c24874a213fa8f,
+    username: 'twede',
+    hashed_password: 'ungWv48Bz+pBQUDeXa4iI7ADYaOWF3qctBD/YfIAFa0=',
+    __v: 0,
+    quote: '"Time you enjoyed wasting, was not wasted"' },
+  { _id: 5c0ef8b2ee1bfa7f2f579567,
+    username: 'Anakin',
+    hashed_password: 'ungWv48Bz+pBQUDeXa4iI7ADYaOWF3qctBD/YfIAFa0=',
+    __v: 0,
+    quote: 'I hate sand' } ]
+[0mGET /quotes [32m200 [0m6.853 ms - 333[0m
+[0mGET /user/profile [32m200 [0m8.924 ms - 149[0m
