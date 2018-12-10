@@ -1,0 +1,49 @@
+html {
+  background-color:#8366FF;
+}
+
+
+.horizontalFlex {
+  display: flex;
+  justify-content:space-between;
+}
+
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:white;
+  /*background-color:#80CC80;*/
+  width:80%;
+  margin:0px auto;
+  height:100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-width:600px;
+}
+
+h1, h2, h3, span {
+  background-color: white;
+  padding:5px;
+  margin:2px;
+}
+
+form {
+  line-height:2em;
+  width:50%;
+  padding-bottom:30px;
+  max-width:300px;
+  min-width:275px;
+}
+
+form label {
+  
+}
+
+form input {
+ float:right;
+}
+
+a {
+  color: #00B7FF;
+}
+
