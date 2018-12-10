@@ -21,7 +21,7 @@ body {
   min-width:600px;
 }
 
-h1, h2, h3, span {
+h1, h2, h3, span, .quote {
   background-color: white;
   padding:5px;
   margin:2px;

@@ -18,14 +18,15 @@
                 <a id="editLink" href="/user">Edit User</a>
             </div>
         </div>
-        
+        <hr>
+        <h3>Quotes from your fellow classmates</h3>
+        <div class="quote" ng-repeat="user in quotes">
+            <p><div style="font-style:italic">{{user.quote}}</div>
+            <strong>-{{user.username}}</strong></p>
+        </div>
     </div>
     <br/>
     <br/>
-    <hr>
-    <span id="indexMsg">
-        <%= msg %>
-    </span>
     <hr>
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="/javascripts/my_app.js"></script>

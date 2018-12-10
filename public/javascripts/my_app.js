@@ -10,4 +10,9 @@ angular.module('myApp', []).
       $scope.user = {};
       $scope.error = data;
     });
+    
+    $http.get('/quotes')
+      .success(function(data, status, headers, config){
+        $scope.quotes = data;
+      });
   }]);
